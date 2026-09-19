@@ -527,6 +527,10 @@ app.use((err, req, res, next) => {
   next();
 });
 
-app.listen(PORT, () => {
-  console.log(`Cauvery Med server running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Cauvery Med server running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
