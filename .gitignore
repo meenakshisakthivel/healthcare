@@ -1,0 +1,12 @@
+node_modules/
+.env
+uploads/temp/
+uploads/*.pdf
+uploads/*.txt
+uploads/*.png
+uploads/*.jpg
+uploads/*.jpeg
+uploads/*.doc
+uploads/*.docx
+.DS_Store
+npm-debug.log*

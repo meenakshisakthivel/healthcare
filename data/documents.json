@@ -1,0 +1,622 @@
+[
+  {
+    "id": "DOC-1001",
+    "patientId": "P-1001",
+    "originalFilename": "lab-report.pdf",
+    "fileType": "PDF",
+    "uploadDate": "2026-01-12",
+    "category": "Laboratory Report",
+    "processingStatus": "processed",
+    "extractedText": "Patient Name: Asha Nair. Patient ID: P-1001. Hemoglobin: 11.5 g/dL (Reference Range 12.0-15.5 g/dL). TSH: 8.4 mIU/L (Reference Range 0.4-4.0). Diagnosis: Hypothyroidism. Doctor: Dr. S. Kumar. Hospital: Cauvery General Hospital.",
+    "extractionConfidence": 0.94,
+    "storagePath": "uploads/demo/lab-report.pdf",
+    "documentDate": "2026-01-12",
+    "sourceInfo": {
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "DOC-1002",
+    "patientId": "P-1001",
+    "originalFilename": "prescription.pdf",
+    "fileType": "PDF",
+    "uploadDate": "2026-01-15",
+    "category": "Prescription",
+    "processingStatus": "processed",
+    "extractedText": "Prescription Date: 2026-01-15. Medicine: Levothyroxine 50 mcg. Frequency: Once daily. Duration: 30 days. Prescribing doctor: Dr. N. Menon. Instructions: Take on empty stomach.",
+    "extractionConfidence": 0.92,
+    "storagePath": "uploads/demo/prescription.pdf",
+    "documentDate": "2026-01-15",
+    "sourceInfo": {
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "DOC-1003",
+    "patientId": "P-1001",
+    "originalFilename": "discharge-summary.txt",
+    "fileType": "TXT",
+    "uploadDate": "2026-02-01",
+    "category": "Discharge Summary",
+    "processingStatus": "processed",
+    "extractedText": "Admission Date: 2026-01-28. Discharge Date: 2026-02-01. Diagnosis: Hypothyroidism. Procedures: None. Hospital Course: Patient discharged stable. Follow-up: Review in 2 weeks. Doctor: Dr. A. Shah. Hospital: Cauvery Med City.",
+    "extractionConfidence": 0.9,
+    "storagePath": "uploads/demo/discharge-summary.txt",
+    "documentDate": "2026-02-01",
+    "sourceInfo": {
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "DOC-1004",
+    "patientId": "P-1001",
+    "originalFilename": "imaging-report.png",
+    "fileType": "PNG",
+    "uploadDate": "2026-02-05",
+    "category": "Imaging Report",
+    "processingStatus": "processed",
+    "extractedText": "Imaging Type: MRI Brain. Findings: Mild cortical atrophy on T2 weighted images. Impression: Nonspecific findings. Radiologist: Dr. V. Raghavan. Date: 2026-02-05.",
+    "extractionConfidence": 0.85,
+    "storagePath": "uploads/demo/imaging-report.png",
+    "documentDate": "2026-02-05",
+    "sourceInfo": {
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "DOC-1005",
+    "patientId": "P-1001",
+    "originalFilename": "clinical-note.txt",
+    "fileType": "TXT",
+    "uploadDate": "2026-02-10",
+    "category": "Clinical Note",
+    "processingStatus": "processed",
+    "extractedText": "Clinical note from Dr. S. Kumar. Symptoms: Fatigue, weight gain. Follow-up date: 2026-02-10. Recommendation: Continue dose adjustment and repeat thyroid function tests in 6 weeks.",
+    "extractionConfidence": 0.88,
+    "storagePath": "uploads/demo/clinical-note.txt",
+    "documentDate": "2026-02-10",
+    "sourceInfo": {
+      "pageNumber": 1
+    }
+  },
+  {
+    "id": "DOC-1789771418452-ca5e",
+    "patientId": "P-1001",
+    "originalFilename": "Blood_Test_Reference_Sheet.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-18",
+    "category": "Other",
+    "processingStatus": "failed",
+    "extractedText": "",
+    "extractionConfidence": 0,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\blood_test_reference_sheet.pdf-1789771418438-fce4a2e1-fd23-47a0-b205-911e72366c01.pdf",
+    "documentDate": "",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "errorMessage": "bad XRef entry"
+  },
+  {
+    "id": "DOC-1789771966277-9845",
+    "patientId": "P-1001",
+    "originalFilename": "Sample_ECG_Report.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-18",
+    "category": "Other",
+    "processingStatus": "processed",
+    "extractedText": "\n\nSAMPLE / TEACHING DOCUMENT — FICTIONAL PATIENT — NOT A REAL MEDICAL RECORD\nGeneral Teaching Hospital — Cardiology Education Unit\nElectrocardiogram (ECG) Report • Sample created for educational use only\nPatient Name:Sample Patient (fictional)Patient ID:EDU-0000-TEST\nAge / Sex:58 / Male (fictional)Date of Birth:N/A — synthetic data\nStudy Date:18-Sep-2026Referring Physician:N/A — teaching sample\nIndication:Routine cardiac screening (educational example)\nAutomated Measurements\nHeart Rate72 bpmPR Interval158 ms\nQRS Duration92 msQT / QTc392 / 416 ms\nP Axis+52°QRS Axis+38°\nRhythmRegularT Axis+45°\n12-Lead Rhythm Strip (Lead II, synthetic waveform)\nPaper speed 25 mm/s, gain 10 mm/mV — synthetic waveform generated for teaching purposes, not derived from a real patient.\nInterpretation\nNormal sinus rhythm at 72 bpm. Normal P wave morphology and axis. PR, QRS, and QT/QTc intervals within normal\nlimits. No ST-segment elevation or depression. No pathological Q waves. T waves upright in the lateral leads. No evidence\nof chamber enlargement or conduction abnormality on this synthetic tracing.\nImpression: Normal ECG (teaching example).\nThis document was generated as a fictional, illustrative example for educational/training purposes only. The patient, waveform, and measurements\nare synthetic and do not correspond to any real individual or clinical encounter. It is not a valid medical record and must not be used for diagnosis,\nbilling, identification, or any official purpose.",
+    "extractionConfidence": 0.88,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\sample_ecg_report.pdf-1789771966267-739b1f0a-5006-40cb-931a-2b4815d0e5a0.pdf",
+    "documentDate": "2026-09-18",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "structuredData": {
+      "patient": {
+        "name": "Sample Patient (fictional)Patient ID:EDU-0000-TEST",
+        "patientId": "EDU-0000-TEST",
+        "dateOfBirth": "N/A — synthetic data"
+      },
+      "document": {
+        "documentId": "DOC-1789771966277-9845",
+        "type": "Imaging Report",
+        "date": "2026-09-18",
+        "sourceFile": "Sample_ECG_Report.pdf"
+      },
+      "clinicalInformation": {
+        "symptoms": [],
+        "diagnoses": [
+          "Normal ECG (teaching example)."
+        ],
+        "findings": []
+      },
+      "medications": [],
+      "laboratoryResults": [],
+      "procedures": [],
+      "imaging": [
+        {
+          "imagingType": "CT",
+          "details": "IONAL PATIENT — NOT A REAL MEDICAL RECORD",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "rocardiogram (ECG) Report • Sample created for educational use only",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Patient ID:EDU-0000-TEST",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Date of Birth:N/A — synthetic data",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ion abnormality on this synthetic tracing.",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional, illustrative example for educational/training purposes only. The patient, waveform, and measurements",
+          "date": ""
+        }
+      ],
+      "followUps": [],
+      "metadata": {
+        "doctor": "N/A — teaching sample",
+        "hospital": "",
+        "confidence": 0.88,
+        "extractedAt": "2026-09-18T22:52:46.403Z"
+      }
+    }
+  },
+  {
+    "id": "DOC-1789772662436-2dee",
+    "patientId": "P-1002",
+    "originalFilename": "Blood_Test_Reference_Sheet.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-18",
+    "category": "Other",
+    "processingStatus": "failed",
+    "extractedText": "",
+    "extractionConfidence": 0,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\blood_test_reference_sheet.pdf-1789772662433-4df6f884-579e-44bf-bf92-6869dea57035.pdf",
+    "documentDate": "",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "errorMessage": "bad XRef entry"
+  },
+  {
+    "id": "DOC-1789772711459-6c5f",
+    "patientId": "P-1002",
+    "originalFilename": "Sample_ECG_Report.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-18",
+    "category": "Other",
+    "processingStatus": "processed",
+    "extractedText": "\n\nSAMPLE / TEACHING DOCUMENT — FICTIONAL PATIENT — NOT A REAL MEDICAL RECORD\nGeneral Teaching Hospital — Cardiology Education Unit\nElectrocardiogram (ECG) Report • Sample created for educational use only\nPatient Name:Sample Patient (fictional)Patient ID:EDU-0000-TEST\nAge / Sex:58 / Male (fictional)Date of Birth:N/A — synthetic data\nStudy Date:18-Sep-2026Referring Physician:N/A — teaching sample\nIndication:Routine cardiac screening (educational example)\nAutomated Measurements\nHeart Rate72 bpmPR Interval158 ms\nQRS Duration92 msQT / QTc392 / 416 ms\nP Axis+52°QRS Axis+38°\nRhythmRegularT Axis+45°\n12-Lead Rhythm Strip (Lead II, synthetic waveform)\nPaper speed 25 mm/s, gain 10 mm/mV — synthetic waveform generated for teaching purposes, not derived from a real patient.\nInterpretation\nNormal sinus rhythm at 72 bpm. Normal P wave morphology and axis. PR, QRS, and QT/QTc intervals within normal\nlimits. No ST-segment elevation or depression. No pathological Q waves. T waves upright in the lateral leads. No evidence\nof chamber enlargement or conduction abnormality on this synthetic tracing.\nImpression: Normal ECG (teaching example).\nThis document was generated as a fictional, illustrative example for educational/training purposes only. The patient, waveform, and measurements\nare synthetic and do not correspond to any real individual or clinical encounter. It is not a valid medical record and must not be used for diagnosis,\nbilling, identification, or any official purpose.",
+    "extractionConfidence": 0.88,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\sample_ecg_report.pdf-1789772711455-ce899ae8-aba2-40b8-8875-e9030c2dbe89.pdf",
+    "documentDate": "2026-09-18",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "structuredData": {
+      "patient": {
+        "name": "Sample Patient (fictional)Patient ID:EDU-0000-TEST",
+        "patientId": "EDU-0000-TEST",
+        "dateOfBirth": "N/A — synthetic data"
+      },
+      "document": {
+        "documentId": "DOC-1789772711459-6c5f",
+        "type": "Imaging Report",
+        "date": "2026-09-18",
+        "sourceFile": "Sample_ECG_Report.pdf"
+      },
+      "clinicalInformation": {
+        "symptoms": [],
+        "diagnoses": [
+          "Normal ECG (teaching example)."
+        ],
+        "findings": []
+      },
+      "medications": [],
+      "laboratoryResults": [],
+      "procedures": [],
+      "imaging": [
+        {
+          "imagingType": "CT",
+          "details": "IONAL PATIENT — NOT A REAL MEDICAL RECORD",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "rocardiogram (ECG) Report • Sample created for educational use only",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Patient ID:EDU-0000-TEST",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Date of Birth:N/A — synthetic data",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ion abnormality on this synthetic tracing.",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional, illustrative example for educational/training purposes only. The patient, waveform, and measurements",
+          "date": ""
+        }
+      ],
+      "followUps": [],
+      "metadata": {
+        "doctor": "N/A — teaching sample",
+        "hospital": "",
+        "confidence": 0.88,
+        "extractedAt": "2026-09-18T23:05:11.502Z"
+      }
+    }
+  },
+  {
+    "id": "DOC-1789775907313-4bd0",
+    "patientId": "P-1003",
+    "originalFilename": "Sample_ECG_Report.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-18",
+    "category": "Other",
+    "processingStatus": "processed",
+    "extractedText": "\n\nSAMPLE / TEACHING DOCUMENT — FICTIONAL PATIENT — NOT A REAL MEDICAL RECORD\nGeneral Teaching Hospital — Cardiology Education Unit\nElectrocardiogram (ECG) Report • Sample created for educational use only\nPatient Name:Sample Patient (fictional)Patient ID:EDU-0000-TEST\nAge / Sex:58 / Male (fictional)Date of Birth:N/A — synthetic data\nStudy Date:18-Sep-2026Referring Physician:N/A — teaching sample\nIndication:Routine cardiac screening (educational example)\nAutomated Measurements\nHeart Rate72 bpmPR Interval158 ms\nQRS Duration92 msQT / QTc392 / 416 ms\nP Axis+52°QRS Axis+38°\nRhythmRegularT Axis+45°\n12-Lead Rhythm Strip (Lead II, synthetic waveform)\nPaper speed 25 mm/s, gain 10 mm/mV — synthetic waveform generated for teaching purposes, not derived from a real patient.\nInterpretation\nNormal sinus rhythm at 72 bpm. Normal P wave morphology and axis. PR, QRS, and QT/QTc intervals within normal\nlimits. No ST-segment elevation or depression. No pathological Q waves. T waves upright in the lateral leads. No evidence\nof chamber enlargement or conduction abnormality on this synthetic tracing.\nImpression: Normal ECG (teaching example).\nThis document was generated as a fictional, illustrative example for educational/training purposes only. The patient, waveform, and measurements\nare synthetic and do not correspond to any real individual or clinical encounter. It is not a valid medical record and must not be used for diagnosis,\nbilling, identification, or any official purpose.",
+    "extractionConfidence": 0.88,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\sample_ecg_report.pdf-1789775907301-234bdb8b-9331-40b5-8171-9b9e91da942e.pdf",
+    "documentDate": "2026-09-18",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "structuredData": {
+      "patient": {
+        "name": "Sample Patient (fictional)Patient ID:EDU-0000-TEST",
+        "patientId": "EDU-0000-TEST",
+        "dateOfBirth": "N/A — synthetic data"
+      },
+      "document": {
+        "documentId": "DOC-1789775907313-4bd0",
+        "type": "Imaging Report",
+        "date": "2026-09-18",
+        "sourceFile": "Sample_ECG_Report.pdf"
+      },
+      "clinicalInformation": {
+        "symptoms": [],
+        "diagnoses": [
+          "Normal ECG (teaching example)."
+        ],
+        "findings": []
+      },
+      "medications": [],
+      "laboratoryResults": [],
+      "procedures": [],
+      "imaging": [
+        {
+          "imagingType": "CT",
+          "details": "IONAL PATIENT — NOT A REAL MEDICAL RECORD",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "rocardiogram (ECG) Report • Sample created for educational use only",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Patient ID:EDU-0000-TEST",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Date of Birth:N/A — synthetic data",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ion abnormality on this synthetic tracing.",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional, illustrative example for educational/training purposes only. The patient, waveform, and measurements",
+          "date": ""
+        }
+      ],
+      "followUps": [],
+      "metadata": {
+        "doctor": "N/A — teaching sample",
+        "hospital": "",
+        "confidence": 0.88,
+        "extractedAt": "2026-09-18T23:58:27.625Z"
+      }
+    }
+  },
+  {
+    "id": "DOC-1789776042899-3990",
+    "patientId": "P-1005",
+    "originalFilename": "Blood_Test_Reference_Sheet.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-19",
+    "category": "Other",
+    "processingStatus": "processed",
+    "extractedText": "\n\nBlood Test Reference Sheet\nEducational overview of common blood tests, what they measure, and typical adult reference ranges\nThis sheet summarizes commonly ordered blood tests for general education (e.g., school or intro medical coursework).\nReference ranges vary between laboratories, instruments, and patient populations (age, sex, pregnancy, altitude, etc.), so treat\nthese as illustrative, not diagnostic. Always use the range printed on an actual lab report, since that is calibrated to the specific lab\nand method used.\nComplete Blood Count (CBC)\nTestWhat It MeasuresTypical Adult Reference Range*\nHemoglobin (Hb)Oxygen-carrying protein in red blood cellsMen: 13.5–17.5 g/dL\nWomen: 12.0–15.5 g/dL\nHematocrit (Hct)Percentage of blood volume made up of red cellsMen: 41–50%\nWomen: 36–44%\nRed Blood Cell (RBC) countNumber of red cells per volume of bloodMen: 4.5–5.9 million/μL\nWomen: 4.0–5.2 million/μL\nWhite Blood Cell (WBC) countNumber of infection-fighting cells4,000–11,000 /μL\nPlatelet countCell fragments involved in clotting150,000–450,000 /μL\nMean Corpuscular Volume (MCV)Average size of red blood cells80–100 fL\nLipid Panel\nTestWhat It MeasuresTypical Adult Reference Range*\nTotal CholesterolTotal cholesterol carried in the blood< 200 mg/dL desirable\nLDL Cholesterol“Bad” cholesterol; builds arterial plaque< 100 mg/dL optimal\nHDL Cholesterol“Good” cholesterol; helps clear LDLMen: > 40 mg/dL\nWomen: > 50 mg/dL\nTriglyceridesFat circulating in the blood, from diet/liver< 150 mg/dL\nCardiac Enzymes / Markers\nTestWhat It MeasuresTypical Adult Reference Range*\nTroponin I or TProtein released when heart muscle is damaged; key marker for heart attack< 0.04 ng/mL (assay-dependent; rises within 3–6 hrs of injury)\nCK-MBHeart-specific fraction of creatine kinase enzyme0–5 ng/mL (varies by lab)\nBNP / NT-proBNPHormone released when heart is stretched or strained; used to assess heart failureBNP < 100 pg/mL (age/assay-dependent)\nMyoglobinEarly but non-specific marker of muscle damage25–72 ng/mL (varies by lab)\nBasic Metabolic Panel (selected)\nTestWhat It MeasuresTypical Adult Reference Range*\nSodium (Na+)Key electrolyte for fluid balance & nerve function135–145 mmol/L\nPotassium (K+)Electrolyte critical for heart rhythm & muscle function3.5–5.0 mmol/L\n\nTestWhat It MeasuresTypical Adult Reference Range*\nGlucose (fasting)Blood sugar level70–99 mg/dL\nCreatinineWaste product filtered by kidneys; marker of kidney function0.6–1.3 mg/dL\n*Reference ranges shown are commonly cited adult ranges for general education and can differ by laboratory, analyzer, units, age, sex, and\nclinical context. This sheet is for learning purposes only and is not a substitute for an actual laboratory report or professional medical\ninterpretation.",
+    "extractionConfidence": 0.88,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\blood_test_reference_sheet.pdf-1789776042892-72c4d2c6-4b78-43f2-89f9-39e1e878933d.pdf",
+    "documentDate": "2026-09-19",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "structuredData": {
+      "patient": {
+        "name": "",
+        "patientId": "P-1005",
+        "dateOfBirth": ""
+      },
+      "document": {
+        "documentId": "DOC-1789776042899-3990",
+        "type": "Laboratory Report",
+        "date": "2026-09-19",
+        "sourceFile": "Blood_Test_Reference_Sheet.pdf"
+      },
+      "clinicalInformation": {
+        "symptoms": [],
+        "diagnoses": [],
+        "findings": []
+      },
+      "medications": [],
+      "laboratoryResults": [
+        {
+          "testName": "L\nPlatelet countCell fragments involved in clotting",
+          "result": "150",
+          "unit": "",
+          "referenceRange": "",
+          "status": "Documented",
+          "date": ""
+        }
+      ],
+      "procedures": [],
+      "imaging": [
+        {
+          "imagingType": "ct",
+          "details": "ual lab report, since that is calibrated to the specific lab",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": ")Percentage of blood volume made up of red cellsMen: 41–50%",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ion-fighting cells4,000–11,000 /μL",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ion of creatine kinase enzyme0–5 ng/mL (varies by lab)",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ed)",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "rolyte for fluid balance & nerve function135–145 mmol/L",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "rolyte critical for heart rhythm & muscle function3.5–5.0 mmol/L",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "filtered by kidneys; marker of kidney function0.6–1.3 mg/dL",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ual laboratory report or professional medical",
+          "date": ""
+        }
+      ],
+      "followUps": [],
+      "metadata": {
+        "doctor": "",
+        "hospital": "",
+        "confidence": 0.88,
+        "extractedAt": "2026-09-19T00:00:42.945Z"
+      }
+    }
+  },
+  {
+    "id": "DOC-1789776781814-8f54",
+    "patientId": "P-1002",
+    "verifiedIdentity": {
+      "type": "patient-id",
+      "value": "P-1002",
+      "verifiedAt": "2026-09-19T00:13:01.814Z"
+    },
+    "originalFilename": "blood_test_reference_sheet.pdf-1789771418438-fce4a2e1-fd23-47a0-b205-911e72366c01.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-19",
+    "category": "Other",
+    "processingStatus": "failed",
+    "extractedText": "",
+    "extractionConfidence": 0,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\blood_test_reference_sheet.pdf-1789771418438-fce4a2e1-fd23-47a0-b205-911e72366c01.pdf-1789776781812-0fa8d3dd-ad85-4bfe-abbd-2b9950a45cb9.pdf",
+    "documentDate": "",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "errorMessage": "Command token too long: 128"
+  },
+  {
+    "id": "DOC-1789776827051-33ce",
+    "patientId": "P-1002",
+    "verifiedIdentity": {
+      "type": "patient-id",
+      "value": "P-1002",
+      "verifiedAt": "2026-09-19T00:13:47.051Z"
+    },
+    "originalFilename": "verification-test.txt",
+    "fileType": "text/plain",
+    "uploadDate": "2026-09-19",
+    "category": "Other",
+    "processingStatus": "processed",
+    "extractedText": "Patient Name: MEENAKASHI\r\nPatient ID: P-1002\r\nDate: 2026-09-19\r\nLaboratory Report\r\nHemoglobin: 12.4 g/dL\r\nDiagnosis: Routine screening\r\nDoctor: Dr. Demo\r\n",
+    "extractionConfidence": 0.88,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\verification-test.txt-1789776827047-58cc91e9-dd21-4dfe-9f7a-3e327ebfc133.txt",
+    "documentDate": "2026-09-19",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "structuredData": {
+      "patient": {
+        "name": "MEENAKASHI",
+        "patientId": "P-1002",
+        "dateOfBirth": ""
+      },
+      "document": {
+        "documentId": "DOC-1789776827051-33ce",
+        "type": "Laboratory Report",
+        "date": "2026-09-19",
+        "sourceFile": "verification-test.txt"
+      },
+      "clinicalInformation": {
+        "symptoms": [],
+        "diagnoses": [
+          "Routine screening"
+        ],
+        "findings": []
+      },
+      "medications": [],
+      "laboratoryResults": [
+        {
+          "testName": "2026-09-19\n\nLaboratory Report\n\nHemoglobin",
+          "result": "12.4",
+          "unit": "g/dL",
+          "referenceRange": "",
+          "status": "Documented",
+          "date": "2026-09-19"
+        }
+      ],
+      "procedures": [],
+      "imaging": [
+        {
+          "imagingType": "ct",
+          "details": "or: Dr. Demo",
+          "date": "2026-09-19"
+        }
+      ],
+      "followUps": [],
+      "metadata": {
+        "doctor": "Dr. Demo",
+        "hospital": "",
+        "confidence": 0.88,
+        "extractedAt": "2026-09-19T00:13:47.069Z"
+      }
+    }
+  },
+  {
+    "id": "DOC-1789777047117-7b22",
+    "patientId": "P-1003",
+    "verifiedIdentity": {
+      "type": "patient-id",
+      "value": "P-1003",
+      "verifiedAt": "2026-09-19T00:17:27.117Z"
+    },
+    "originalFilename": "Sample_ECG_Report.pdf",
+    "fileType": "application/pdf",
+    "uploadDate": "2026-09-19",
+    "category": "Other",
+    "processingStatus": "processed",
+    "extractedText": "\n\nSAMPLE / TEACHING DOCUMENT — FICTIONAL PATIENT — NOT A REAL MEDICAL RECORD\nGeneral Teaching Hospital — Cardiology Education Unit\nElectrocardiogram (ECG) Report • Sample created for educational use only\nPatient Name:Sample Patient (fictional)Patient ID:EDU-0000-TEST\nAge / Sex:58 / Male (fictional)Date of Birth:N/A — synthetic data\nStudy Date:18-Sep-2026Referring Physician:N/A — teaching sample\nIndication:Routine cardiac screening (educational example)\nAutomated Measurements\nHeart Rate72 bpmPR Interval158 ms\nQRS Duration92 msQT / QTc392 / 416 ms\nP Axis+52°QRS Axis+38°\nRhythmRegularT Axis+45°\n12-Lead Rhythm Strip (Lead II, synthetic waveform)\nPaper speed 25 mm/s, gain 10 mm/mV — synthetic waveform generated for teaching purposes, not derived from a real patient.\nInterpretation\nNormal sinus rhythm at 72 bpm. Normal P wave morphology and axis. PR, QRS, and QT/QTc intervals within normal\nlimits. No ST-segment elevation or depression. No pathological Q waves. T waves upright in the lateral leads. No evidence\nof chamber enlargement or conduction abnormality on this synthetic tracing.\nImpression: Normal ECG (teaching example).\nThis document was generated as a fictional, illustrative example for educational/training purposes only. The patient, waveform, and measurements\nare synthetic and do not correspond to any real individual or clinical encounter. It is not a valid medical record and must not be used for diagnosis,\nbilling, identification, or any official purpose.",
+    "extractionConfidence": 0.88,
+    "storagePath": "C:\\Users\\MEENAKSHI\\OneDrive\\Desktop\\HEALTHCARE\\uploads\\sample_ecg_report.pdf-1789777047105-32dba8a1-6190-456f-b1d0-399978da94cb.pdf",
+    "documentDate": "2026-09-19",
+    "sourceInfo": {
+      "pageNumber": 1
+    },
+    "structuredData": {
+      "patient": {
+        "name": "Sample Patient (fictional)Patient ID:EDU-0000-TEST",
+        "patientId": "EDU-0000-TEST",
+        "dateOfBirth": "N/A — synthetic data"
+      },
+      "document": {
+        "documentId": "DOC-1789777047117-7b22",
+        "type": "Imaging Report",
+        "date": "2026-09-19",
+        "sourceFile": "Sample_ECG_Report.pdf"
+      },
+      "clinicalInformation": {
+        "symptoms": [],
+        "diagnoses": [
+          "Normal ECG (teaching example)."
+        ],
+        "findings": []
+      },
+      "medications": [],
+      "laboratoryResults": [],
+      "procedures": [],
+      "imaging": [
+        {
+          "imagingType": "CT",
+          "details": "IONAL PATIENT — NOT A REAL MEDICAL RECORD",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "rocardiogram (ECG) Report • Sample created for educational use only",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Patient ID:EDU-0000-TEST",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional)Date of Birth:N/A — synthetic data",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ion abnormality on this synthetic tracing.",
+          "date": ""
+        },
+        {
+          "imagingType": "ct",
+          "details": "ional, illustrative example for educational/training purposes only. The patient, waveform, and measurements",
+          "date": ""
+        }
+      ],
+      "followUps": [],
+      "metadata": {
+        "doctor": "N/A — teaching sample",
+        "hospital": "",
+        "confidence": 0.88,
+        "extractedAt": "2026-09-19T00:17:27.229Z"
+      }
+    }
+  }
+]

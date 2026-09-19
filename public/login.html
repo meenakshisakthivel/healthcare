@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="brand-block">
+          <div class="logo-icon">CM</div>
+          <div>
+            <h1>CAUVERY MED</h1>
+            <p>Medical Document Intelligence</p>
+          </div>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <div class="field-wrap">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="demo@cauverymed.local" required />
+          </div>
+
+          <div class="field-wrap password-wrap">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" value="demo123" required />
+            <button type="button" class="toggle-password" aria-label="Show password">Show</button>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Login</button>
+          <button type="button" id="demoLogin" class="btn btn-secondary full-width">Use Demo Login</button>
+        </form>
+
+        <div id="loginMessage" class="message-box" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

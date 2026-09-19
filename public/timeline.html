@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Timeline</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/patients.html">Patients</a>
+          <a href="/upload.html">Upload Documents</a>
+          <a class="active" href="/timeline.html">Medical Timeline</a>
+          <a href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h1>Patient Event Timeline</h1>
+          </div>
+          <select id="timelinePatientSelect" class="select-inline"></select>
+        </header>
+
+        <section class="panel">
+          <div id="timelineContainer" class="timeline"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/timeline.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+
+        <nav class="nav-menu">
+          <a class="active" href="/dashboard.html">Dashboard</a>
+          <a href="/patients.html">Patients</a>
+          <a href="/upload.html">Upload Documents</a>
+          <a href="/timeline.html">Medical Timeline</a>
+          <a href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h1>Clinical Dashboard</h1>
+          </div>
+          <div class="user-pill">Demo Clinician</div>
+        </header>
+
+        <section class="stats-grid">
+          <div class="stat-card">
+            <span>Total Patients</span>
+            <strong id="totalPatients">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>Total Documents</span>
+            <strong id="totalDocuments">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>Medical Events</span>
+            <strong id="medicalEvents">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>Processing Status</span>
+            <strong id="processingStatus">Healthy</strong>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+          <div class="panel panel-wide">
+            <div class="panel-header">
+              <h3>Recent Uploads</h3>
+            </div>
+            <div id="recentUploads" class="stack-list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Documents by Type</h3>
+            </div>
+            <div id="documentTypeBreakdown" class="mini-chart"></div>
+          </div>
+
+          <div class="panel panel-wide">
+            <div class="panel-header">
+              <h3>Latest Timeline Events</h3>
+            </div>
+            <div id="latestEvents" class="stack-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Settings</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/patients.html">Patients</a>
+          <a href="/upload.html">Upload Documents</a>
+          <a href="/timeline.html">Medical Timeline</a>
+          <a href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a class="active" href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Settings</p>
+            <h1>System Configuration</h1>
+          </div>
+        </header>
+
+        <section class="panel settings-panel">
+          <h3>Prototype Security & Workflow</h3>
+          <ul class="setting-list">
+            <li>AI API key must be kept in .env and never embedded in frontend code.</li>
+            <li>File type validation and upload size limits are enforced by the backend.</li>
+            <li>Extracted information is for review and must be checked by a qualified healthcare professional.</li>
+            <li>Demo mode can be toggled by setting the environment variable.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

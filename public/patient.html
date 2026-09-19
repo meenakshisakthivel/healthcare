@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Patient Profile</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a class="active" href="/patients.html">Patients</a>
+          <a href="/upload.html">Upload Documents</a>
+          <a href="/timeline.html">Medical Timeline</a>
+          <a href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Patient</p>
+            <h1 id="patientTitle">Profile</h1>
+          </div>
+          <a href="/patients.html" class="btn btn-secondary">Back to Patients</a>
+        </header>
+
+        <section class="panel">
+          <div id="patientProfile" class="stack-list"></div>
+        </section>
+
+    <section class="panel" style="margin-top: 20px;">
+      <div class="panel-header">
+        <h3>Uploaded Documents</h3>
+      </div>
+      <div id="patientDocuments" class="stack-list"></div>
+    </section>
+
+    <section class="panel" style="margin-top: 20px;">
+      <div class="panel-header">
+        <h3>Patient Timeline</h3>
+      </div>
+      <div id="patientTimeline" class="timeline"></div>
+    </section>
+  </main>
+</div>
+
+<script src="/js/auth.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const params = new URLSearchParams(window.location.search);
+    const patientId = params.get('id');
+    if (!patientId) return;
+
+    try {
+      const patientResponse = await fetch(`/api/patients/${patientId}`);
+      const patientData = await patientResponse.json();
+      const patient = patientData.patient || {};
+      document.getElementById('patientTitle').textContent = patient.fullName || 'Patient Profile';
+      document.getElementById('patientProfile').innerHTML = `
+        <div class="stack-item">
+          <strong>Patient ID:</strong> ${patient.patientId || patient.id}<br/>
+          <strong>Name:</strong> ${patient.fullName || '-'}<br/>
+          <strong>Date of Birth:</strong> ${patient.dateOfBirth || '-'}<br/>
+          <strong>Gender:</strong> ${patient.gender || '-'}<br/>
+          <strong>Phone:</strong> ${patient.phone || '-'}
+        </div>
+        <div class="stack-item">
+          <strong>Email:</strong> ${patient.email || '-'}<br/>
+          <strong>Address:</strong> ${patient.address || '-'}<br/>
+          <strong>Emergency Contact:</strong> ${patient.emergencyContact || '-'}<br/>
+          <strong>Blood Group:</strong> ${patient.bloodGroup || '-'}<br/>
+          <strong>Allergies:</strong> ${patient.allergies || '-'}
+        </div>
+      `;
+
+      const documentsResponse = await fetch(`/api/patients/${patientId}/documents`);
+      const documentsData = await documentsResponse.json();
+      const documents = documentsData.documents || [];
+      const patientDocumentsEl = document.getElementById('patientDocuments');
+      patientDocumentsEl.innerHTML = documents.length
+        ? documents.map((doc) => `
+            <div class="stack-item">
+              <strong>${doc.originalFilename || 'Document'}</strong>
+              <div class="timeline-event-meta">${doc.category || 'Other'} · ${doc.uploadDate || doc.documentDate || '-'} · ${doc.processingStatus || 'queued'}</div>
+              <div class="timeline-event-meta">Source: ${doc.storagePath || 'local upload'} · Confidence: ${doc.extractionConfidence || 0}</div>
+            </div>
+          `).join('')
+        : '<div class="empty-state">No uploaded documents for this patient.</div>';
+
+      const timelineResponse = await fetch(`/api/patients/${patientId}/timeline`);
+      const timelineData = await timelineResponse.json();
+      const events = timelineData.events || [];
+      const patientTimelineEl = document.getElementById('patientTimeline');
+      patientTimelineEl.innerHTML = events.length
+        ? events.sort((a, b) => new Date(a.eventDate) - new Date(b.eventDate)).map((event) => {
+            const purpose = event.diagnosis || event.eventType || 'Care review';
+            const medication = event.medication || 'No medication recorded';
+            const test = event.test || 'No test recorded';
+            const source = event.sourceFilename || 'Unknown source';
+
+            return `
+              <div class="timeline-item">
+                <div class="timeline-date">${event.eventDate || 'Unknown date'}</div>
+                <h3>${event.title || 'Medical event'}</h3>
+                <div class="badge info">${event.eventType || 'Medical'}</div>
+                <p><strong>Purpose:</strong> ${purpose}</p>
+                <p><strong>Medication / treatment:</strong> ${medication}</p>
+                <p><strong>Clinical detail:</strong> ${event.description || 'No additional description available.'}</p>
+                <p><strong>Relevant test / result:</strong> ${test}${event.result ? ` — ${event.result}` : ''}</p>
+                <div class="timeline-event-meta">Doctor: ${event.doctor || '-'} · Hospital: ${event.hospital || '-'} · Source: ${source}</div>
+              </div>
+            `;
+          }).join('')
+        : '<div class="empty-state">No timeline events found for this patient.</div>';
+    } catch (error) {
+      console.error(error);
+      document.getElementById('patientDocuments').innerHTML = '<div class="empty-state">Unable to load patient data.</div>';
+      document.getElementById('patientTimeline').innerHTML = '<div class="empty-state">Unable to load patient timeline.</div>';
+    }
+</html>

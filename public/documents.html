@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Search</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/patients.html">Patients</a>
+          <a href="/upload.html">Upload Documents</a>
+          <a href="/timeline.html">Medical Timeline</a>
+          <a class="active" href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Search</p>
+            <h1>Document Search</h1>
+          </div>
+        </header>
+
+        <section class="panel">
+          <div class="search-row">
+            <input id="searchInput" type="search" class="search-box wide" placeholder="Search by diagnosis, medicine, doctor, hospital, date or keyword..." />
+            <button id="searchBtn" class="btn btn-primary">Search</button>
+          </div>
+          <div id="searchResults" class="search-results"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/search.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

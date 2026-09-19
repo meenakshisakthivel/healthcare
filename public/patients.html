@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Patients</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a class="active" href="/patients.html">Patients</a>
+          <a href="/upload.html">Upload Documents</a>
+          <a href="/timeline.html">Medical Timeline</a>
+          <a href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Patients</p>
+            <h1>Patient Management</h1>
+          </div>
+          <button id="addPatientBtn" class="btn btn-primary">Add Patient</button>
+        </header>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Patient Directory</h3>
+            <input type="search" id="patientSearch" placeholder="Search patients..." class="search-box" />
+          </div>
+          <div id="patientTableContainer" class="table-wrap"></div>
+        </section>
+      </main>
+    </div>
+
+    <div id="patientModal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Add Patient</h3>
+          <button class="close-btn" data-close="patientModal">×</button>
+        </div>
+        <form id="patientForm" class="form-grid">
+          <input type="hidden" id="patientIdHidden" />
+          <label>Patient ID<input type="text" id="patientId" /></label>
+          <label>Full Name<input type="text" id="fullName" required /></label>
+          <label>Date of Birth<input type="date" id="dateOfBirth" /></label>
+          <label>Gender<select id="gender"><option>Female</option><option>Male</option><option>Other</option></select></label>
+          <label>Phone<input type="tel" id="phone" /></label>
+          <label>Email<input type="email" id="email" /></label>
+          <label>Aadhaar ID<input type="text" id="aadhaarId" inputmode="numeric" /></label>
+          <label>ABHA ID<input type="text" id="abhaId" /></label>
+          <label>Address<input type="text" id="address" /></label>
+          <label>Emergency Contact<input type="text" id="emergencyContact" /></label>
+          <label>Blood Group<input type="text" id="bloodGroup" /></label>
+          <label>Allergies<input type="text" id="allergies" /></label>
+          <label>Existing Conditions<input type="text" id="existingConditions" /></label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" data-close="patientModal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/patients.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauvery Med | Upload</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-box">
+          <div class="logo-icon small">CM</div>
+          <div>
+            <h2>CAUVERY MED</h2>
+            <small>Medical Document Intelligence</small>
+          </div>
+        </div>
+        <nav class="nav-menu">
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/patients.html">Patients</a>
+          <a class="active" href="/upload.html">Upload Documents</a>
+          <a href="/timeline.html">Medical Timeline</a>
+          <a href="/documents.html">Document Search</a>
+          <a href="/reports.html">Reports</a>
+          <a href="/settings.html">Settings</a>
+          <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Upload</p>
+            <h1>Document Intake</h1>
+          </div>
+        </header>
+
+        <section class="panel">
+          <div class="upload-box" id="uploadBox">
+            <input type="file" id="documentInput" multiple accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg" />
+            <label for="documentInput" class="upload-label">Drag & drop files here or click to browse</label>
+          </div>
+          <div class="upload-controls">
+            <label>Verify identity
+              <select id="identityType">
+                <option value="aadhaar">Aadhaar</option>
+                <option value="abha">ABHA</option>
+                <option value="patient-id">Patient ID / MRN</option>
+              </select>
+            </label>
+            <label>Enter identifier
+              <input id="identityValue" type="text" autocomplete="off" placeholder="Enter Aadhaar, ABHA, or patient ID" />
+            </label>
+            <button id="uploadBtn" class="btn btn-primary">Upload & Process</button>
+          </div>
+          <div id="uploadStatus" class="message-box"></div>
+          <div id="uploadList" class="upload-list"></div>
+          <div id="uploadSummary" class="panel hidden"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/upload.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>
