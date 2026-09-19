@@ -17,8 +17,9 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 const publicDir = path.join(__dirname, 'public');
-const uploadsDir = path.join(__dirname, 'uploads');
-const demoDocsDir = path.join(__dirname, 'demo-docs');
+const runtimeDir = process.env.VERCEL ? path.join('/tmp', 'cauvery-med') : __dirname;
+const uploadsDir = path.join(runtimeDir, 'uploads');
+const demoDocsDir = path.join(runtimeDir, 'demo-docs');
 
 fs.mkdirSync(uploadsDir, { recursive: true });
 fs.mkdirSync(demoDocsDir, { recursive: true });
